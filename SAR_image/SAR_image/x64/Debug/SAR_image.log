@@ -1,0 +1,34 @@
+﻿Build started 11/7/2017 12:19:42 PM.
+     1>Project "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_image.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" /I. /FIcuda_runtime.h /c "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_cuda.cu" 
+     1>Project "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_image.vcxproj" (1) is building "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_image.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file SAR_cuda.cu...
+         cmd.exe /C "C:\Users\mkhadatare\AppData\Local\Temp\tmpa5f9885e7123452f9cadcfff784f9086.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\SAR_cuda.cu.obj "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_cuda.cu"
+         
+         C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\SAR_cuda.cu.obj "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_cuda.cu" 
+     1>C:/Users/mkhadatare/Documents/Visual Studio 2013/Projects/SAR_image/SAR_image/SAR_cuda.cu(1038): warning : variable "row_size" was declared but never referenced
+     1>C:/Users/mkhadatare/Documents/Visual Studio 2013/Projects/SAR_image/SAR_image/SAR_cuda.cu(1039): warning : variable "col_size" was declared but never referenced
+     1>C:/Users/mkhadatare/Documents/Visual Studio 2013/Projects/SAR_image/SAR_image/SAR_cuda.cu(1038): warning : variable "row_size" was declared but never referenced
+     1>C:/Users/mkhadatare/Documents/Visual Studio 2013/Projects/SAR_image/SAR_image/SAR_cuda.cu(1039): warning : variable "col_size" was declared but never referenced
+         SAR_cuda.cu
+     1>Done Building Project "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_image.vcxproj" (CudaBuildCore target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\SAR_image.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\lib\x64" cufft.lib cudart_static.lib cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\SAR_image.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\SAR_image.lib" /MACHINE:X64 x64\Debug\SAR_cuda.cu.obj
+            Creating library C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\SAR_image.lib and object C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\SAR_image.exp
+         SAR_image.vcxproj -> C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\SAR_image.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart*.dll" "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart*.dll" "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart*.dll" "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart32_90.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin\cudart64_90.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\mkhadatare\Documents\Visual Studio 2013\Projects\SAR_image\SAR_image\SAR_image.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.54
